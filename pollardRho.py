@@ -1,4 +1,3 @@
-import pdb
 import math
 import random
 def gcd(a,b) :
@@ -40,6 +39,3 @@ def factor(number) :
                         answer = 1
 
         return answer
-
-val = factor(16)
-print val
