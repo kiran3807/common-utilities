@@ -19,10 +19,10 @@ def gcd(a,b) :
 	return answer
 		
 #pollards rho integer factoring algorithm
-def factor(number) :
+def factorise(number) :
 	#xrange lazily generates the next number in the sereis unlike range() which simply produces an array   
         #returns 1 if no common factor was found
-        answer = 0
+        answer = 1
 	for x in xrange(int(math.sqrt(number))) :
 		ran1 = random.randint(1,number)
                 ran2 = random.randint(1,number)
@@ -35,7 +35,5 @@ def factor(number) :
                 if result > 1 :
                         answer = result
                         break
-                elif result == 1 :
-                        answer = 1
 
         return answer

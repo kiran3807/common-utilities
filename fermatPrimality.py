@@ -17,7 +17,7 @@ def gcd(a,b) :
 	
 	return answer
 
-def primalityTest(number):
+def isItPrime(number):
     answer = False
     #more the number of iterations more we can be sure that the number we have in mind is prime
     #This is due to conditional probability
@@ -32,5 +32,3 @@ def primalityTest(number):
                 return False
     return answer
 
-ans = primalityTest(2742)
-print ans
